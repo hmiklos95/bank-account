@@ -21,6 +21,7 @@ public class AccountAggregate extends AggregateRoot {
                 .builder()
                 .id(command.getId())
                 .createdDate(new Date())
+                .accountHolder(command.getAccountHolder())
                 .accountType(command.getAccountType())
                 .openingBalance(command.getOpeningBalance())
                 .build()
